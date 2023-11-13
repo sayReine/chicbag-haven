@@ -1,4 +1,4 @@
-import "./post.css"
+import "./pout.css"
 import { NavLink } from "react-router-dom"
 import React from "react"
 

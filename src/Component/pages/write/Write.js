@@ -5,7 +5,7 @@ export default function Write() {
     <div className="write">
       <section className="writeImg"></section>
         <form className="writeForm">
-            <div className="writeFormGroup">
+            <div className="writeFormGroup"> 
                 <label htmlFor="fileInput">
                 <i className="writeIcon fa-solid fa-plus"></i>
                 </label>

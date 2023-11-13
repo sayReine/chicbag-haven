@@ -1,5 +1,6 @@
 import Post from "../post/Post"
 import "./posts.css"
+// import Pout from "./pout/Pout"
 //import Write from "../pages/write/Write"
 import React from "react"
 

@@ -8,6 +8,7 @@ import Write from "../pages/write/Write";
 
 
 export default function TopBar() {
+  const user = true;
   return (
    <div className="top">
     <div className="topLeft">
@@ -18,17 +19,35 @@ export default function TopBar() {
     </div>
     <div className="topCenter">
           <ul className="topList">
-            <li className="topListItem"> <NavLink to="/home"> HOME</NavLink>
+            <li className="topListItem"> <NavLink to="/" style={{textDecoration:"none",color:"inherit"}}> HOME</NavLink>
               </li>
             <li className="topListItem">
-              <NavLink to="/write"> WRITE</NavLink></li>
+              <NavLink to="/write" style={{textDecoration:"none",color:"inherit"}}> WRITE</NavLink></li>
             <li className="topListItem">
-              <NavLink to="/settings">SETTINGS</NavLink> </li>
-            <li className="topListItem"><NavLink to="login">LOGIN</NavLink> </li>
+              <NavLink to="/settings" style={{textDecoration:"none",color:"inherit"}}>SETTINGS</NavLink> </li>
+            <li className="topListItem"><NavLink to="login" style={{textDecoration:"none",color:"inherit"}} >
+              {user && "LOGOUT"}</NavLink> </li>
           </ul>
           </div>
       <div className="topRight">
-        <section className="topImg"></section>
+        {
+          user ? (
+             <section className="topImg"></section>
+          ) : (
+            <ul className="topList">
+              <li className="topListItem">
+            <NavLink to="/login" style={{textDecoration:"none",color:"inherit"}} >
+             LOGIN </NavLink>
+             </li>
+             <li className="topListItem">
+            <NavLink to="/register" style={{textDecoration:"none",color:"inherit"}} >
+             REGISTER</NavLink>
+             </li>
+             </ul>
+          )
+        }
+        
+       
         <i className="topSearchIcon fa-solid fa-magnifying-glass"></i>
         
       </div>

@@ -9,7 +9,7 @@ import Sidebar from "../../sidebar/Sidebar"
           <span className="settingsDeleteTitle">Delete Account</span>
         </div>
         <form className="settingsForm">
-          <label >Profile Picture</label>
+          <label >Profile Picture</label> 
           <div className="settingsPP">
             <section className="settingsImg"></section>
             <label htmlFor="fileInput">

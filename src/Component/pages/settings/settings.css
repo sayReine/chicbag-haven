@@ -1,5 +1,7 @@
 .settings{
     display: flex;
+    padding: 30px;
+    width: 98%;
 }
 .settingsWrapper{
     flex: 4;
